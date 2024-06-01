@@ -21,7 +21,7 @@ const ServiceBox = ({ service, subtitleService, photo, stages, widthImg}: IServi
                         <div className="flex flex-col gap-3 mb-7 max-md:w-full max-md:px-6 ">
                             <div className="text-textColorSecondary">Etapas do serviço:</div>
                             {stages.map((item: any) => (
-                                <div className="flex gap-2">
+                                <div className="flex gap-2" key={item}>
                                     <div className=" flex justify-center items-center rounded-full bg-primaryColor w-5 h-5 text-black">
                                         <FaCheck className="" />
                                     </div>
