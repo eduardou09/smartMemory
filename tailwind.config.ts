@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors:{
+        primaryColor:"#E1F277",
+        textColorSecondary: "#6B6B6B",
+        secondaryColor: "#1F1F1F",
+        lightGreen: '#E1F277',
+        darkGreen: '#A0B341',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -15,6 +22,12 @@ const config: Config = {
       },
     },
   },
+  // Define fontFamily fora do objeto de theme
+  fontFamily: {
+    'league-spartan': ['League Spartan', 'sans-serif'],
+  },
   plugins: [],
 };
+
 export default config;
+
