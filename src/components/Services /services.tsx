@@ -16,7 +16,7 @@ import '../../app/swiperCustom.css'; // Importa o CSS personalizado
 ///import
 import ServiceBox from './boxServices';
 import photoMarlene from '@/public/images/marlenefoto.png'
-import photoMentoria from '@/public/images/fotomentoria.jpg'
+import photoMentoriaTeste from '@/public/images/fotoMentoria.jpg'
 import photoTrafego from '@/public/images/Trefego.jpg'
 import photoManutencao from '@/public/images/manutecao.jpg'
 
@@ -78,7 +78,7 @@ const Service = () => {
                         service='Mentoria pra empresas'
                         subtitleService={`Imagine ter uma equipe de especialistas ao seu lado, identificando os pontos fracos e áreas de melhoria da sua empresa. `}
                         stages={['Entender a empresa', 'Ver Pontos de melhora', 'Buscar soluções', 'Apresentação da solução']}
-                        photo={photoMentoria }
+                        photo={photoMentoriaTeste }
                         widthImg={'w-max'}
                     />
                 </SwiperSlide>
