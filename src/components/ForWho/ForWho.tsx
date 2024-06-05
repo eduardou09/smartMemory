@@ -8,7 +8,7 @@ import { GiReceiveMoney } from "react-icons/gi";
 import { isMobile } from 'react-device-detect';
 const ForWho = () => {
     return (
-        <div className='flex items-center flex-col justify-center mt-24'>
+        <div className='flex items-center flex-col justify-center mt-24 '>
             <div className='text-3xl font-semibold mb-10'>
                 Pra quem é a <span className='text-primaryColor'>NEK</span>
             </div>

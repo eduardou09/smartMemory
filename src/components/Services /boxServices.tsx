@@ -4,13 +4,10 @@ import { FaCheck } from "react-icons/fa6";
 import Button from "../Button/button";
 import Image from "next/image";
 
-const ServiceBox = ({ service, subtitleService, photo, stages, widthImg}: IServiceBox) => {
+const ServiceBox = ({ service, subtitleService, photo, stages, widthImg }: IServiceBox) => {
     return (
-        <div className='flex flex-col px-16 py-8 max-lg:px-3'>
-            <div className="items-center justify-center text-center">
-                <div className="text-primaryColor text-3xl font-semibold ">Nossos Serviços</div>
-                <div className="text-textColorSecondary">Descubra como qual dos nossos serviços se encaixa melhor para impulsionar seu negócio</div>
-            </div>
+        <div className='flex flex-col px-16 py-8 pt-0  max-lg:px-3'>
+            
             <div className="flex justify-between ">
                 <div className="w-2/4 max-md:w-full">
                     <div className="mt-7 max-md:flex  max-md:flex-col ">
@@ -32,15 +29,17 @@ const ServiceBox = ({ service, subtitleService, photo, stages, widthImg}: IServi
                                 </div>
 
                             ))}</div>
-
-                        <Button  title="Ver mais" width="w-72" padding= "p-2" />
+                        <div className="flex items-center justify-center">
+                            <Button title="Ver mais" width="w-72" padding="p-2" />
+                        </div>
+                      
 
 
                     </div>
                 </div>
-                <div className="flex  items-center justify-center w-2/4 max-md:hidden max-md:w-0">
-                    <div className="flex items-center justify-center">
-                    <Image src={photo} alt="Imagem Hero" className={` p-1 rounded-2xl text-black ${widthImg} `} />
+                <div className="flex w-2/4 max-md:hidden max-md:w-0">
+                    <div className="flex items-center max-md:justify-center">
+                        <Image src={photo} alt="Imagem Hero" className={` p-1 rounded-2xl text-black ${widthImg} `} />
                     </div>
                 </div>
             </div>

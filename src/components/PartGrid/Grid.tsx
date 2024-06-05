@@ -25,7 +25,7 @@ const GridBoxes = () => {
                             mainText='Utilizando a tecnologia e o digital para alavancar seu negócio.'
                         />
                     </div>
-                    <div className='col-span-2'>
+                    <div className='col-span-2' id='about'>
                         <About />
                     </div>
                 </div>

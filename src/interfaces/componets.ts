@@ -1,7 +1,12 @@
+import { Url } from "next/dist/shared/lib/router/router";
+
 export type IButton ={
     title: string;
     width?: string
     padding?: string 
+    onClick?: any
+    radius?: string
+    
 }
 
 export type IBox ={
@@ -31,4 +36,16 @@ export type IBoxGrid ={
 }
 export type ITextArea={
     placeholder:string
+    onChange: any;
+    value:any;
+}
+
+export type IInput={
+    placeholder:string
+    type:string
+    value:any
+    id?:string
+    onChange:any
+    disabled?:boolean
+    label?:string
 }

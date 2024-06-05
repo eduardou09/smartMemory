@@ -4,8 +4,8 @@ import Home from './(public)/home/page';
 
 const Page = () => {
   return (
-    <div>
-      <Home/>
+    <div className=' scroll-smooth'>
+      <Home  />
     </div>
   );
 }

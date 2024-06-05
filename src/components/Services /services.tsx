@@ -29,7 +29,11 @@ const Service = () => {
 
         }]
     return (
-        <div className='mb-10 bg-secondaryColor rounded-2xl mt-10 md:p-1 max-md:'>
+        <div id='servico' className='mb-10 bg-secondaryColor rounded-2xl mt-10  md:p-1 max-md:'>
+            <div className="items-center justify-center text-center pt-6">
+                <div className="text-primaryColor text-3xl font-semibold ">Nossos Serviços</div>
+                <div className="text-textColorSecondary">Descubra como qual dos nossos serviços se encaixa melhor para impulsionar seu negócio</div>
+            </div>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
