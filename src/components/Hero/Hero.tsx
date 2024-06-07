@@ -13,7 +13,7 @@ import { isMobile } from 'react-device-detect';
 
 
 
-const Hero = () => {
+const Hero = ({ handleScrollService}:any) => {
     return (
         <div className='flex justify-between mt-20 items-center max-md:mt-5 max-md:flex-col-reverse'>
             <div className='max-w-xl flex flex-col gap-6 max-md:items-center'>
@@ -23,8 +23,9 @@ const Hero = () => {
                 <p className='text-textColorSecondary text-xl max-md:text-center max-md:text-lg '>Da Concepção à execução, transformamos suas ideias em produtos digitais de alta qualidade.</p>
                 <div className='text-xl '>
                     <Button
-                        title='Saiba Mais'
+                        title='VER SERVIÇOS'
                         width='max-md:w-full'
+                        onClick={ handleScrollService}
                     />
                 </div>
 

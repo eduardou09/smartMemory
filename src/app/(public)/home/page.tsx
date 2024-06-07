@@ -61,7 +61,9 @@ const Home = () => {
         handleScrollAbout={handleScrollAbout}
       />
       <div className='mx-56 max-lg:mx-4'>
-        <Hero />
+        <Hero 
+         handleScrollService={handleScrollService}
+        />
         <ForWho 
         serviceRef={serviceRef}
         
