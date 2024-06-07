@@ -68,7 +68,7 @@ const Contact = () => {
 
 
     const handleScrollService = () => {
-        router.push('/home');
+    
       serviceRef.current?.scrollIntoView({ behavior: 'smooth' });
       setIsHeader(!isHeader)
     };
