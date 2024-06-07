@@ -3,6 +3,7 @@ import { IServiceBox } from "@/interfaces/componets";
 import { FaCheck } from "react-icons/fa6";
 import Button from "../Button/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const ServiceBox = ({ service, subtitleService, photo, stages, widthImg }: IServiceBox) => {
     return (
@@ -29,8 +30,11 @@ const ServiceBox = ({ service, subtitleService, photo, stages, widthImg }: IServ
                                 </div>
 
                             ))}</div>
-                        <div className="flex items-center justify-center">
-                            <Button title="Ver mais" width="w-72" padding="p-2" />
+                        <div className="flex max-md:justify-center">
+                            <Link href={'/contact'}>
+                                <Button title="Entrar em contato" width="w-72" padding="p-2" />
+                            </Link>
+                         
                         </div>
                       
 

@@ -15,6 +15,7 @@ export type IBox ={
     icon?:any
     photo?: any
     isPhoto?: boolean
+    ref?:null
 
 }
 

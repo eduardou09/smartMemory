@@ -8,48 +8,51 @@ import useStore from '../../utils/stateSite';
 import iconAbout from '@/public/icons/icons8-about-50 (1).png';
 import Link from "next/link";
 
-const Header = ({ handleClick }: any) => {
-    const { isHeader, setIsHeader } = useStore();
-    console.log(isHeader);
+const Header = ({ handleClick, serviceRef, handleScrollService, isHeader, handleScrollAbout }: any) => {
+
+
     return (
         <div>
             {isMobile ? (
                 <div>
                     <div className="flex justify-between items-center text-xl pt-4 border-b border-gray-900 px-10 w-full bg-black z-50 top-0 right-0 ">
-                        <h1 className="text-primaryColor font-bold font-league-spartan py-3">Nek.</h1>
+                        <Link href={'/home'}>
+                            <h1 className="text-primaryColor font-bold font-league-spartan py-3 cursor-pointer">Nek.</h1>
+                        </Link>
+
                         <div>
                             {isHeader ? (
 
                                 <div>
                                     <div className="h-screen flex flex-col top-0 right-0 bg-black border-l border-gray-900 z-50 p-2 transition-all px-4 py-4 fixed">
                                         <div className="flex w-full">
-                                            <RiMenuFold4Fill className="text-primaryColor text-3xl" onClick={() => setIsHeader(!isHeader)} />
+                                            <RiMenuFold4Fill className="text-primaryColor text-3xl" onClick={handleClick} />
                                         </div>
                                         <div className="flex gap-3 flex-col mt-4">
-                                            <div className="flex items-center gap-2 bg-secondaryColor justify-center py-2 rounded-xl">
+                                            <button className="flex items-center gap-2 bg-secondaryColor justify-center py-2 rounded-xl" onClick={handleScrollService}>
                                                 <GrServices /> <a href="#servico" className="">Serviços</a>
-                                            </div>
-                                            <div className="flex items-center gap-2 bg-secondaryColor justify-center py-2 rounded-xl">
-                                                <Image src={iconAbout} alt="" className='w-5' onClick={() => setIsHeader(!isHeader)} />
+                                            </button>
+                                            <button className="flex items-center gap-2 bg-secondaryColor justify-center py-2 rounded-xl" onClick={handleScrollAbout}>
+                                                <Image src={iconAbout} alt="" className='w-5' />
                                                 <a href="#about">Sobre nós</a>
-                                            </div>
+                                            </button>
                                             <Link href={'/contact'}>
-                                            <div className="flex items-center gap-2 bg-secondaryColor pl-5 py-2 rounded-xl" >
-                                                <MdOutlineContactMail />   <p>Entrar em contato</p>
+                                                <button onClick={handleClick} className="flex items-center gap-2 bg-secondaryColor pl-5 py-2 rounded-xl" >
+                                                    <MdOutlineContactMail />   <p>Entrar em contato</p>
                                                     <span className="relative flex h-3 w-3 right-1 bottom-5">
                                                         <span className="animate-ping absolute left-2 inline-flex h-full w-full rounded-full bg-primaryColor opacity-75"></span>
                                                         <span className="relative inline-flex left-2 rounded-full h-3 w-3 bg-primaryColor "></span>
                                                     </span>
-                                            </div>
+                                                </button>
                                             </Link>
                                         </div>
-                                       
+
                                     </div>
-                                    <div className="m-0 p-0 fixed bg-black z-40 w-full inset-0 bg-opacity-70" onClick={() => setIsHeader(!isHeader)}></div>
+                                    <div className="m-0 p-0 fixed bg-black z-40 w-full inset-0 bg-opacity-70" onClick={handleClick}></div>
                                 </div>
                             ) : (
                                 <div className="transition-all">
-                                    <RiMenuUnfold4Fill className="text-primaryColor text-3xl" onClick={() => setIsHeader(!isHeader)} />
+                                    <RiMenuUnfold4Fill className="text-primaryColor text-3xl" onClick={handleClick} />
                                 </div>
                             )}
                         </div>
@@ -57,10 +60,12 @@ const Header = ({ handleClick }: any) => {
                 </div>
             ) : (
                 <div className="flex justify-between items-center text-xl pt-4 border-b border-gray-900 py-3 px-56">
-                    <h1 className="text-primaryColor font-bold font-league-spartan">Nek.</h1>
+                    <Link href={'/home'}>
+                        <h1 className="text-primaryColor font-bold font-league-spartan py-3 cursor-pointer">Nek.</h1>
+                    </Link>
                     <div className="flex gap-6">
-                        <a href="#servico" className="">Serviços</a>
-                        <a href="#about">Sobre nós</a>
+                        <button onClick={handleScrollService}>Serviços</button>
+                        <button onClick={handleScrollAbout} >Sobre nós</button>
                     </div>
 
                     <Link href={'/contact'}>

@@ -12,6 +12,7 @@ import 'swiper/css/scrollbar';
 
 // Import custom Swiper styles
 import '../../app/swiperCustom.css'; // Importa o CSS personalizado
+import { useRef } from 'react';
 
 ///import
 import ServiceBox from './boxServices';
@@ -19,17 +20,17 @@ import photoMarlene from '@/public/images/marlenefoto.png'
 import photoMentoriaTeste from '@/public/images/fotoMentoria.jpg'
 import photoTrafego from '@/public/images/Trefego.jpg'
 import photoManutencao from '@/public/images/manutecao.jpg'
+import photoSite from '@/public/images/site.png'
+import photoSoft from '@/public/images/software.png'
 
-const Service = () => {
-
+const Service = ({serviceRef}:any) => {
+ 
     services: [
         {
-
             timeLine: ['discovery', 'Design', 'Desenvolvimento', 'Implantação']
-
         }]
     return (
-        <div id='servico' className='mb-10 bg-secondaryColor rounded-2xl mt-10  md:p-1 max-md:'>
+        <div id='servico' ref={serviceRef} className='mb-10 bg-secondaryColor rounded-2xl mt-10  md:p-1 max-md:'>
             <div className="items-center justify-center text-center pt-6">
                 <div className="text-primaryColor text-3xl font-semibold ">Nossos Serviços</div>
                 <div className="text-textColorSecondary">Descubra como qual dos nossos serviços se encaixa melhor para impulsionar seu negócio</div>
@@ -49,6 +50,16 @@ const Service = () => {
                         service='Desenvolvimento de Software'
                         subtitleService='Imagine seu negócio operando com eficiência máxima, cada processo otimizado e cada tarefa automatizada. Isso é possível com nosso serviço de desenvolvimento de software sob medida!'
                         stages={['Discovery', 'Design', 'Desenvolvimento', 'Implantação']}
+                        photo={photoSoft}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                <ServiceBox
+                        service='Desenvolvimento de Sites'
+                        subtitleService={`Desenvolvemos diversos tipos de sites para impulsionar o crescimento de clientes e aumentar suas vendas.`}
+                        stages={['Discovery', 'Design', 'Desenvolvimento', 'Implantação']}
+                        photo={photoSite}
+                        widthImg={'w-max'}
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -59,15 +70,7 @@ const Service = () => {
                         stages={['Criar/usar contas em meios de tráfego', 'Gerar o tráfego ', 'Gerar Leads', 'Conversão de leads']}
                     />
                 </SwiperSlide>
-                <SwiperSlide>
-                <ServiceBox
-                        service='Desenvolvimento de Sites'
-                        subtitleService={`Desenvolvemos diversos tipos de sites para impulsionar o crescimento de clientes e aumentar suas vendas.`}
-                        stages={['Discovery', 'Design', 'Desenvolvimento', 'Implantação']}
-                        photo={photoMarlene}
-                        widthImg={'w-max'}
-                    />
-                </SwiperSlide>
+               
                 <SwiperSlide> 
                     <ServiceBox
                         service='Manutenção de Software'

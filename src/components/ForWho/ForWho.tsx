@@ -6,7 +6,7 @@ import IconErrorPc from '@/public/icons/iconErrorPC.png'
 import { AiOutlineCluster } from "react-icons/ai";
 import { GiReceiveMoney } from "react-icons/gi";
 import { isMobile } from 'react-device-detect';
-const ForWho = () => {
+const ForWho = ({ref, serviceRef}:any) => {
     return (
         <div className='flex items-center flex-col justify-center mt-24 '>
             <div className='text-3xl font-semibold mb-10'>
@@ -29,11 +29,14 @@ const ForWho = () => {
                 title='Empresas querem vender mais '
                 text='Empresas que não estão contentes com a quantidade de vendas e necessitam vender mais, mas não sabem como, se precisam de trafego, sistema pra gerir, etc.'
                 />
+                <div ref={serviceRef}>
                 <Box 
+          
                 icon={<AiOutlineCluster />}
                 title='Empresa que buscam tecnologia de ponta'
                 text='Empresas que estão sempre em busca de tecnologias inovadoras para se manterem na liderança do mercado e garantirem sua vantagem competitiva.'
                 />
+                </div>
             </div>
         </div>
     )

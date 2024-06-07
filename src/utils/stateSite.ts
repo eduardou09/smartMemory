@@ -6,14 +6,14 @@ import { create } from 'zustand';
 
 
 
-const useStore = create((set: SetState<any>) => ({
+const useStoreMain = create((set: SetState<any>) => ({
   isHeader: false,
   form: [],
   setIsHeader: (value: boolean) => set({ isHeader: value }), // Define o tipo de value como boolean
   setForm: (form: any[]) => set({ form }), // Corrige a atualização do estado 'form'
 }));
 
-export default useStore;
+export default useStoreMain;
 
 export const loadUsers = async () => {
   const { data, error } = await supabase
@@ -25,7 +25,7 @@ export const loadUsers = async () => {
     return;
   }
 
-  const { setForm } = useStore.getState(); // Obtém a função setForm do Zustand store
+  const { setForm } = useStoreMain.getState(); // Obtém a função setForm do Zustand store
   setForm(data);
 };
 

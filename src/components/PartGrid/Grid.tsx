@@ -7,7 +7,7 @@ import About from './About';
 import { isMobile } from 'react-device-detect';
 
 
-const GridBoxes = () => {
+const GridBoxes = ({aboutRef}:any) => {
     return (
 
        
@@ -26,7 +26,9 @@ const GridBoxes = () => {
                         />
                     </div>
                     <div className='col-span-2' id='about'>
-                        <About />
+                        <About 
+                        aboutRef={aboutRef}
+                        />
                     </div>
                 </div>
 

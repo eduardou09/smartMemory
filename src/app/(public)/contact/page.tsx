@@ -2,15 +2,17 @@
 import Header from "@/components/Header/Header"
 import Input from "@/components/Input/input"
 import TextArea from "@/components/textArea/textArea"
-import { ChangeEvent, useState } from "react"
+import { ChangeEvent, useRef, useState } from "react"
 import useStore from "@/utils/containerForm"
 import Button from "@/components/Button/button"
 import { supabase } from "@/config/supabaseClient"
+import useStoreMain from "@/utils/stateSite"
+
 
 
 const Contact = () => {
     // const { values, setValues } = useStore();
-
+   
     const [value, setValue] = useState<any>({
         name: "",
         email: "",
@@ -22,7 +24,7 @@ const Contact = () => {
         trafficManagement: false,
         softwareMaintenance: false,
     });
-
+    const { isHeader, setIsHeader, form } = useStoreMain();
     const handleChange = (field: any, value: string) => {
         setValue((prevState: any) => ({
             ...prevState,
@@ -61,19 +63,33 @@ const Contact = () => {
     }
 
 
-    // const onSave = async () => {
-    //     await saveUser(newValues.id, {
-    //       ...newValues,
-    //       valueCredit: parseInt(newValues.valueCredit),
-    //       limit: parseInt(newValues.limit),
-    //     });
-    //     setReload((reload) => !reload);
-    //   };
-    console.log(value)
+    const serviceRef = useRef<HTMLDivElement | null>(null)
+    const aboutRef = useRef<HTMLDivElement | null>(null)
+
+
+    const handleScrollService = () => {
+        router.push('/home');
+      serviceRef.current?.scrollIntoView({ behavior: 'smooth' });
+      setIsHeader(!isHeader)
+    };
+    const handleScrollAbout = () => {
+      aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+      setIsHeader(!isHeader)
+    };
+  
+    const handleClick = () => {
+      setIsHeader(!isHeader)
+    }
     return (
         <div>
-            <Header />
-            <div className='mx-56 max-lg:mx-4 h-screen flex items-center'>
+             <Header
+        serviceRef={serviceRef}
+        handleScrollService={handleScrollService}
+        isHeader={isHeader}
+        handleClick={handleClick}
+        handleScrollAbout={handleScrollAbout}
+      />
+            <div className='mx-56 max-lg:mx-4 h-screen flex items-center max-md:mt-4'>
                 <div className="w-full flex bg-primaryColor max-h-fit rounded-3xl p-3  max-md:flex-col">
                     <div className="flex items-center max-md:hidden ">
                         <h2 className="text-5xl text-black font-semibold max-md:text-3xl ">
