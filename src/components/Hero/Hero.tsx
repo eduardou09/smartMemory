@@ -13,7 +13,7 @@ import { isMobile } from 'react-device-detect';
 
 
 
-const Hero = ({ handleScrollService}:any) => {
+const Hero = ({ handleScrollServiceButton}:any) => {
     return (
         <div className='flex justify-between mt-20 items-center max-md:mt-5 max-md:flex-col-reverse'>
             <div className='max-w-xl flex flex-col gap-6 max-md:items-center'>
@@ -25,7 +25,7 @@ const Hero = ({ handleScrollService}:any) => {
                     <Button
                         title='VER SERVIÇOS'
                         width='max-md:w-full'
-                        onClick={ handleScrollService}
+                        onClick={ handleScrollServiceButton}
                     />
                 </div>
 

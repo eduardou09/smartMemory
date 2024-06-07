@@ -29,7 +29,7 @@ const ForWho = ({ref, serviceRef}:any) => {
                 title='Empresas querem vender mais '
                 text='Empresas que não estão contentes com a quantidade de vendas e necessitam vender mais, mas não sabem como, se precisam de trafego, sistema pra gerir, etc.'
                 />
-                <div ref={serviceRef}>
+                <div ref={ serviceRef}>
                 <Box 
           
                 icon={<AiOutlineCluster />}

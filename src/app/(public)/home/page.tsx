@@ -39,6 +39,11 @@ const Home = () => {
     serviceRef.current?.scrollIntoView({ behavior: 'smooth' });
     setIsHeader(!isHeader)
   };
+  const handleScrollServiceButton = () => {
+    serviceRef.current?.scrollIntoView({ behavior: 'smooth' });
+   
+  };
+
   const handleScrollAbout = () => {
     aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
     setIsHeader(!isHeader)
@@ -62,14 +67,14 @@ const Home = () => {
       />
       <div className='mx-56 max-lg:mx-4'>
         <Hero 
-         handleScrollService={handleScrollService}
+          handleScrollServiceButton={handleScrollServiceButton}
         />
         <ForWho 
-        serviceRef={serviceRef}
+        // serviceRef={serviceRef} // arrumar o href do service
         
         />
         <Service
-         // serviceRef={serviceRef}
+        serviceRef={serviceRef}
 
         />
         <GridBoxes 
