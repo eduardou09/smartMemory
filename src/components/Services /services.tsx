@@ -17,11 +17,11 @@ import { useRef } from 'react';
 ///import
 import ServiceBox from './boxServices';
 import photoMarlene from '@/public/images/marlenefoto.png'
-import photoMentoriaTeste from '@/public/images/fotoMentoria.jpg'
-import photoTrafego from '@/public/images/Trefego.jpg'
-import photoManutencao from '@/public/images/manutecao.jpg'
-import photoSite from '@/public/images/site.png'
-import photoSoft from '@/public/images/software.png'
+import photoMentoriaTeste from '@/public/images/mentoria.webp'
+import photoTrafego from '@/public/images/trafego.webp'
+import photoManutencao from '@/public/images/manutencao.webp'
+import photoSite from '@/public/images/site.webp'
+import photoSoft from '@/public/images/software.webp'
 
 const Service = ({serviceRef}:any) => {
  

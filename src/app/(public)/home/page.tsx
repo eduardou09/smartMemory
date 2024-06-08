@@ -59,11 +59,14 @@ const Home = () => {
 
     <div>
       <Header
+        onClickSecond={handleScrollAbout }
+        onClickFirst={handleScrollServiceButton}
+        first="Serviços"
+        second="Sobre nós"
         serviceRef={serviceRef}
-        handleScrollService={handleScrollService}
         isHeader={isHeader}
         handleClick={handleClick}
-        handleScrollAbout={handleScrollAbout}
+        isContact={true}
       />
       <div className='mx-56 max-lg:mx-4'>
         <Hero 

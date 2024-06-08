@@ -84,10 +84,10 @@ const Contact = () => {
         <div>
              <Header
         serviceRef={serviceRef}
-        handleScrollService={handleScrollService}
-        isHeader={isHeader}
+       isHeader={isHeader}
         handleClick={handleClick}
-        handleScrollAbout={handleScrollAbout}
+        isContact={false}
+        Contractfirst={"Home"}
       />
             <div className='mx-56 max-lg:mx-4 h-screen flex items-center max-md:mt-4'>
                 <div className="w-full flex bg-primaryColor max-h-fit rounded-3xl p-3  max-md:flex-col">

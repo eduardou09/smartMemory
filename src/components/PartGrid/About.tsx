@@ -8,6 +8,7 @@ import photo from '@/public/images/eduardoFoto.jpeg'
 import { isMobile } from 'react-device-detect';
 
 const About = ({aboutRef}:any) => {
+    
     return (
         <div className=' flex bg-secondaryColor rounded-2xl p-4 max-md:p-8 ' ref={aboutRef}>
             <div className='flex pl-8 flex-col justify-center max-md:pl-0 '>
