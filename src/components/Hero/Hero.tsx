@@ -7,8 +7,8 @@ import React from 'react';
 import { IButton } from '@/interfaces/componets';
 import Button from '../Button/button';
 import Image from 'next/image';
-import foto from '@/public/images/fotoHero.svg'
-import fotoMobile from '@/public/images/fotoHeroMobile.svg'
+import foto from '@/public/images/fotoHeroCorrect.svg'
+import fotoMobile from '@/public/images/mobileFotoCorrect.svg'
 import { isMobile } from 'react-device-detect';
 
 

@@ -70,8 +70,8 @@ const Header = ({ handleClick, isHeader, onClickFirst, onClickSecond, second, fi
                         <h1 className="text-primaryColor font-bold font-league-spartan py-3 cursor-pointer">Nek.</h1>
                     </Link>
                     <div className="flex gap-6">
-                        <button onClick={onClickFirst}>{first}</button>
-                        <button onClick={onClickSecond} >{second}</button>
+                        <button className="hover:bg-gray-900 px-4 rounded-3xl " onClick={onClickFirst}>{first}</button>
+                        <button onClick={onClickSecond} className="hover:bg-gray-900 px-4 rounded-3xl ">{second}</button>
                     </div>
 
                     {isContact && <Link href={'/contact'}>
