@@ -26,6 +26,7 @@ export type IServiceBox ={
     subtitleService:string;
     //stage:string;
     photo?:any
+    photo2?:any
     stages:any
     widthImg?:string
 }

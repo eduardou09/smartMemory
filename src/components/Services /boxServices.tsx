@@ -5,11 +5,11 @@ import Button from "../Button/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const ServiceBox = ({ service, subtitleService, photo, stages, widthImg }: IServiceBox) => {
+const ServiceBox = ({ service, subtitleService, photo, stages, widthImg, photo2 }: IServiceBox) => {
     return (
         <div className='flex flex-col px-16 py-8 pt-0  max-lg:px-3'>
             
-            <div className="flex justify-between ">
+            <div className="flex gap-32 mt-10">
                 <div className="w-2/4 max-md:w-full">
                     <div className="mt-7 max-md:flex  max-md:flex-col ">
                         <div className="font-semibold text-2xl max-md:items-center max-md:px-6">{service}</div>
@@ -17,7 +17,7 @@ const ServiceBox = ({ service, subtitleService, photo, stages, widthImg }: IServ
 
 
                         <div className="flex flex-col gap-3 mb-7 max-md:w-full max-md:px-6 ">
-                            <div className="text-textColorSecondary">Etapas do serviço:</div>
+                            <div className="text-textColorSecondary">Dia da foto:</div>
                             {stages.map((item: any) => (
                                 <div className="flex gap-2" key={item}>
                                     <div className=" flex justify-center items-center rounded-full bg-primaryColor w-5 h-5 text-black">
@@ -30,20 +30,20 @@ const ServiceBox = ({ service, subtitleService, photo, stages, widthImg }: IServ
                                 </div>
 
                             ))}</div>
-                        <div className="flex max-md:justify-center">
-                            <Link href={'/contact'}>
-                                <Button title="Entrar em contato" width="w-72" padding="p-2" />
-                            </Link>
-                         
-                        </div>
+                        
                       
 
 
                     </div>
                 </div>
-                <div className="flex w-2/4 max-md:hidden max-md:w-0">
-                    <div className="flex items-center max-md:justify-center">
-                        <Image src={photo} alt="Imagem Hero" className={` p-1 rounded-2xl text-black ${widthImg} `} />
+                <div className=" flex gap-3 max-md:hidden max-md:w-0">
+                <div className=" ">
+                        <Image src={photo} alt="Imagem Hero" className={` p-1 rounded-2xl text-black w-64  h-90
+                        `} />
+                    </div>
+                    <div className="">
+                        <Image src={photo2} alt="Imagem Hero" className={` p-1 rounded-2xl text-black w-64  h-90
+                        `} />
                     </div>
                 </div>
             </div>

@@ -5,8 +5,8 @@ import iconNek from "@/public/icons/iconeNek.png"
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nek - Marketing digital para aumentar suas vendas!",
-  description: "Nek | Marketing digital - Aumente suas vendas no digital, Desenvolvimento de software, Marketing Digital, Manunteção de sistemas, Gestão de Tráfego",
+  title: "Eduzin e Pitica",
+  description: "Casal do seculo",
 };
 
 export default function RootLayout({

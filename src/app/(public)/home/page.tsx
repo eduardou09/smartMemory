@@ -57,11 +57,11 @@ const Home = () => {
 
   return (
 
-    <div>
+    <div className=' bg-backgroundColorFix'>
       <Header
         onClickSecond={handleScrollAbout }
         onClickFirst={handleScrollServiceButton}
-        first="Serviços"
+        first="Momentos"
         second="Sobre nós"
         serviceRef={serviceRef}
         isHeader={isHeader}

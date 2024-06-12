@@ -7,8 +7,8 @@ import React from 'react';
 import { IButton } from '@/interfaces/componets';
 import Button from '../Button/button';
 import Image from 'next/image';
-import foto from '@/public/images/fotoHeroCorrect.svg'
-import fotoMobile from '@/public/images/mobileFotoCorrect.svg'
+import foto from '@/public/fotosSibele/fotoLaguna.jpeg'
+import fotoMobile from '@/public/fotosSibele/fotoLaguna.jpeg'
 import { isMobile } from 'react-device-detect';
 
 
@@ -18,12 +18,12 @@ const Hero = ({ handleScrollServiceButton}:any) => {
         <div className='flex justify-between mt-20 items-center max-md:mt-5 max-md:flex-col-reverse'>
             <div className='max-w-xl flex flex-col gap-6 max-md:items-center'>
                 <p className='text-white text-5xl font-bold  text-left  max-md:text-center  max-md:text-4xl'>
-                    Automatize processos, ganhe <span className='text-primaryColor'>tempo</span>, <span className='text-primaryColor'>dinheiro</span> e impulsione seus <span className='text-primaryColor'>resultados </span>
+                     <span className='text-primaryColor'>Eu te amo</span> muito meu amor
                 </p>
-                <p className='text-textColorSecondary text-xl max-md:text-center max-md:text-lg '>Da Concepção à execução, transformamos suas ideias em produtos digitais de alta qualidade.</p>
+                <p className='text-textColorSecondary text-xl max-md:text-center max-md:text-lg '>Da indireita pro mundo, ainda vamos rodar o mundo juntos</p>
                 <div className='text-xl '>
                     <Button
-                        title='VER SERVIÇOS'
+                        title='ver nossos momentos'
                         width='max-md:w-full'
                         onClick={ handleScrollServiceButton}
                     />
@@ -31,9 +31,9 @@ const Hero = ({ handleScrollServiceButton}:any) => {
 
             </div>
             <div >
-                <div>
+                <div className='mr-32'>
                     {/* Usando a tag <Image> do Next.js com a largura especificada */}
-                    <Image src={isMobile ? fotoMobile : foto} alt="Imagem Hero" className='w-94 max-md:mb-10 ' />
+                    <Image src={isMobile ? fotoMobile : foto} alt="Imagem Hero" className=' h-96 w-72 max-md:mb-10 rounded-md' />
                   
                 </div>
 

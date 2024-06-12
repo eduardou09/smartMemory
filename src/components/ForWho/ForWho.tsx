@@ -1,40 +1,38 @@
 "use client"
 import React from 'react';
 import Box from '../Box/box';
-import { IoIosBusiness } from "react-icons/io";
-import IconErrorPc from '@/public/icons/iconErrorPC.png'
-import { AiOutlineCluster } from "react-icons/ai";
-import { GiReceiveMoney } from "react-icons/gi";
+import { FaHeart } from "react-icons/fa";
 import { isMobile } from 'react-device-detect';
 const ForWho = ({ref, serviceRef}:any) => {
     return (
         <div className='flex items-center flex-col justify-center mt-24 '>
-            <div className='text-3xl font-semibold mb-10'>
-                Pra quem é a <span className='text-primaryColor'>NEK</span>
+            <div className='text-3xl font-semibold mb-3'>
+                Porque eu <span className='text-primaryColor'>te amo</span>
             </div>
+            <div className='mb-10'>Esses são apenas alguns dos motivos pelos quais eu te amo tanto. Você é incrível e sou muito feliz por compartilhar minha vida com você.</div>
             <div className={isMobile ? `flex flex-wrap gap-6` : `grid grid-cols-2 gap-10 `}>
                 <Box 
-                icon= {<IoIosBusiness />}
-                title='Pequenas, Médias e Grandes Empresas.'
-                text='Para empresas que necessitam automatizar seus processos em busca de ganhar tempo, melhorar a produtividade da empresa, reduzir erros e garantir segurança.'
+                icon= {<FaHeart />}
+                title='Seu Jeito'
+                text='O seu jeito único ilumina meus dias. Seja como você se preocupa com os detalhes ou a maneira como você se move e fala, tudo em você me traz alegria e conforto. O seu jeitinho especial, autêntico e carinhoso faz com que eu me sinta amado e especial todos os dias.'
                 />
                 <Box 
-                isPhoto={true}
-                photo={IconErrorPc}
-                title='Empresas enfretam problemas no sistema '
-                text='Softwares sob medida para abordar os problemas internos de sua empresa, impulsionando a eficiência operacional e promovendo um ambiente de trabalho mais produtivo.'
+               // isPhoto={true}
+                icon={<FaHeart />}
+                title='Seu Companheirismo'
+                text='Você está sempre ao meu lado, não importa o que aconteça. O seu companheirismo é uma força silenciosa que me dá coragem para enfrentar qualquer desafio. Você é minha parceira nas aventuras da vida, me apoiando nos momentos difíceis e celebrando comigo nas conquistas. Saber que posso contar com você é uma das maiores bênçãos da minha vida.'
                 />
                 <Box 
-                icon= {<GiReceiveMoney />}
-                title='Empresas querem vender mais '
-                text='Empresas que não estão contentes com a quantidade de vendas e necessitam vender mais, mas não sabem como, se precisam de trafego, sistema pra gerir, etc.'
+                icon= {<FaHeart />}
+                title='Seu Sorriso'
+                text='O seu sorriso é simplesmente contagiante. Não importa o quão difícil tenha sido o meu dia, ver o seu sorriso derrete todas as minhas preocupações e aquece meu coração. Ele me lembra constantemente que o amor e a felicidade são as coisas mais importantes da vida. Cada vez que você sorri, eu me apaixono um pouco mais.'
                 />
                 <div ref={ serviceRef}>
                 <Box 
           
-                icon={<AiOutlineCluster />}
-                title='Empresa que buscam tecnologia de ponta'
-                text='Empresas que estão sempre em busca de tecnologias inovadoras para se manterem na liderança do mercado e garantirem sua vantagem competitiva.'
+                icon={<FaHeart />}
+                title=' Sua Inteligência'
+                text='A sua inteligência é uma das coisas que mais admiro em você. Você tem uma maneira incrível de ver o mundo, de resolver problemas e de entender as coisas mais complexas com tanta facilidade. Conversar com você é sempre estimulante e enriquecedor. A sua curiosidade e o seu desejo de aprender me inspiram todos os dias a ser uma pessoa melhor.'
                 />
                 </div>
             </div>

@@ -4,7 +4,7 @@ import { GrServices } from "react-icons/gr";
 import Image from "next/image";
 import { MdOutlineContactMail } from "react-icons/md";
 import useStore from '../../utils/stateSite';
-import iconAbout from '@/public/icons/icons8-about-50 (1).png';
+
 import Link from "next/link";
 import { IoHome } from "react-icons/io5";
 import { isMobile } from "react-device-detect";
@@ -15,15 +15,15 @@ const Header = ({ handleClick, isHeader, onClickFirst, onClickSecond, second, fi
         <div>
             {isMobile? (
                 <div>
-                    <div className="flex justify-between items-center text-xl pt-4 border-b border-gray-900 px-10 w-full bg-black z-50 top-0 right-0 ">
+                    <div className="flex justify-between items-center text-xl pt-4 border-b border-gray-100 px-10 w-full  z-50 top-0 right-0 ">
                         <Link href={'/home'}>
-                            <h1 className="text-primaryColor font-bold font-league-spartan py-3 cursor-pointer">Nek.</h1>
+                            <h1 className="text-primaryColor font-bold font-league-spartan py-3 cursor-pointer">Sibilinha e Eduardinho</h1>
                         </Link>
 
                         <div>
                             {isHeader ? (
                                 <div>
-                                    <div className="h-screen flex flex-col top-0 right-0 bg-black border-l border-gray-900 z-50 p-2 transition-all px-4 py-4 fixed ">
+                                    <div className="h-screen flex flex-col top-0 right-0 bg-black border-l border-gray-100 z-50 p-2 transition-all px-4 py-4 fixed ">
                                         <div className="flex w-full ">
                                             <RiMenuFold4Fill className="text-primaryColor text-3xl" onClick={handleClick} />
                                         </div>
@@ -34,7 +34,6 @@ const Header = ({ handleClick, isHeader, onClickFirst, onClickSecond, second, fi
                                                      <GrServices /> <a href="#servico" className="">{first}</a>
                                                  </button>
                                                  <button className="flex items-center gap-2 bg-secondaryColor justify-center py-2 rounded-xl" onClick={onClickSecond}>
-                                                     <Image src={iconAbout} alt="" className='w-5' />
                                                      <a href="#about">{second}</a>
                                                  </button>
                                                  <Link href={'/contact'}>
@@ -65,20 +64,16 @@ const Header = ({ handleClick, isHeader, onClickFirst, onClickSecond, second, fi
                     </div>
                 </div>
             ) : (
-                <div className="flex justify-between items-center text-xl pt-4 border-b border-gray-900 py-3 px-56">
+                <div className="flex justify-between items-center text-xl pt-4 border-b border-green-500 py-3 px-56">
                     <Link href={'/home'}>
-                        <h1 className="text-primaryColor font-bold font-league-spartan py-3 cursor-pointer">Nek.</h1>
+                        <h1 className="text-primaryColor font-bold font-league-spartan py-3 cursor-pointer">Sibilinha e Eduardinho</h1>
                     </Link>
                     <div className="flex gap-6">
                         <button className="hover:bg-gray-900 px-4 rounded-3xl " onClick={onClickFirst}>{first}</button>
                         <button onClick={onClickSecond} className="hover:bg-gray-900 px-4 rounded-3xl ">{second}</button>
                     </div>
 
-                    {isContact && <Link href={'/contact'}>
-                        <button type="button" className={` bg-primaryColor text-black px-8 rounded-3xl max-md:text-lg py-2 `} >
-                            Contato
-                        </button>
-                    </Link>}
+                   
                 </div>
 
 

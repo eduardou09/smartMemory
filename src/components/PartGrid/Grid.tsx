@@ -15,14 +15,15 @@ const GridBoxes = ({aboutRef}:any) => {
                 <div className={isMobile ? `flex gap-6 flex-col ` : `grid  grid-rows-2 gap-10 `}>
                     <div className='flex'>
                         <BoxGrid
-                            mainText='Uma equipe altamente capacitada pra grandes projetos'
-                            subText='Uma equipe de profissionais altamente capacitada para transforma suas ideia e seus problemas em soluções inovadoras '
+                          
+                            mainText='Beijinho, Boa noite te amo.'
                             isLeft={true}
                         />
                     </div>
                     <div className='flex '>
                         <BoxGrid
-                            mainText='Utilizando a tecnologia e o digital para alavancar seu negócio.'
+                         mainText='Eu te amo mais que tudo nessa vida, pitica. Quero passar o resto da vida com vôce. '
+                           
                         />
                     </div>
                     <div className='col-span-2' id='about'>
