@@ -57,7 +57,7 @@ const Home = () => {
 
   return (
 
-    <div className=' bg-backgroundColorFix'>
+    <div className=' bg-gradient-to-r from-black to-[#340854]'>
       <Header
         onClickSecond={handleScrollAbout }
         onClickFirst={handleScrollServiceButton}
@@ -72,12 +72,14 @@ const Home = () => {
         <Hero 
           handleScrollServiceButton={handleScrollServiceButton}
         />
-        <ForWho 
-        // serviceRef={serviceRef} // arrumar o href do service
-        
-        />
+        </div>
+        <div className='bg-white '>
+        <ForWho />
+        </div>
+      
+          <div className='mx-56 max-lg:mx-4'>
         <Service
-        serviceRef={serviceRef}
+     
 
         />
         <GridBoxes 

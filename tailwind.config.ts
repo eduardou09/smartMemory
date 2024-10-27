@@ -11,10 +11,11 @@ const config: Config = {
       colors:{
         primaryColor:"#c53249",
         textColorSecondary: "white",
-        secondaryColor: "#048c5b",
+        secondaryColor: "#fff200",
         lightGreen: '#5fd8b5',
         darkGreen: '#A0B341',
-        backgroundColorFix:"#32c595"
+        backgroundColorFix:"#32c595",
+        roxo: "#6718a3"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
