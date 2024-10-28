@@ -159,9 +159,9 @@ const Home = () => {
 
               <div className="text-black flex items-center flex-col text-center mt-4">
                 <div>
-                  De <span className="text-red-500 font-bold line-through">R$59,90 </span> por
+                  De <span className="text-red-500 font-bold text-3xl line-through">R$64,95</span> por
                 </div>
-                <div className="text-5xl  font-bold text-[#00a857] animate-bounce mt-4">R$29,90</div>
+                <div className="text-6xl  font-bold text-[#00a857] animate-bounce mt-4">R$29,99</div>
               </div>
               <div className="mt-2">
                 <Button title="ver nossos momentos" />
