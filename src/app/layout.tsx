@@ -7,8 +7,8 @@ import iconNek from "@/public/icons/iconeNek.png";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Eduzin e Pitica",
-  description: "Casal do seculo",
+  title: "SmartMemory",
+  description: "SmartMemory: Melhore com técnicas comprovadas, dicas e exercícios práticos. Treine sua mente para aumentar o foco, retenção e produtividade, foco ENEM 2024.",
 };
 
 export default function RootLayout({
@@ -19,6 +19,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <Head>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+
+
         {/* Meta Pixel Code */}
         <script
           dangerouslySetInnerHTML={{

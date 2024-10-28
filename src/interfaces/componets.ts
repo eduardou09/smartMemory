@@ -11,7 +11,7 @@ export type IButton ={
 
 export type IBox ={
     title: string;
-    text: string;
+    text: any
     icon?:any
     photo?: any
     isPhoto?: boolean
