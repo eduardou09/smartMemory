@@ -11,7 +11,7 @@ const Button = ({
   radius = "rounded-3xl",
 }: IButton) => {
   return (
-    <Link href={"https://pay.kirvano.com/ef582c9e-6a1c-403b-8876-5ff647a041a3"} className="flex w-full">
+    <Link href={"https://pay.kirvano.com/ef582c9e-6a1c-403b-8876-5ff647a041a3"} target="_blank" className="flex w-full">
       <div className="relative w-full ">
         {/* Bolinha pulsante */}
         {/* Bolinha pulsante */}
