@@ -13,8 +13,7 @@ const Button = ({
   return (
     <Link href={"https://pay.kirvano.com/ef582c9e-6a1c-403b-8876-5ff647a041a3"}  className="flex w-full">
       <div className="relative w-full ">
-        {/* Bolinha pulsante */}
-        {/* Bolinha pulsante */}
+
         <span className="absolute left-full -ml-[30px] -mt-[10px] flex h-8 w-8">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-8 w-8  bg-red-600"></span>
