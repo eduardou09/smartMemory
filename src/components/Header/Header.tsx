@@ -16,13 +16,13 @@ const Header = ({ handleClick, isHeader, onClickFirst, onClickSecond, second, fi
             {isMobile? (
                 <div>
                     <div className="flex justify-center items-center bg-roxo py-4 font-semibold">
-                       PARA QUEM VAI PASSAR NO ENEM
+                    Para quem tem dificuldade de estudar.
                     </div>
                 </div>
             ) : (
                 <div className="flex justify-center items-center bg-roxo py-4 font-semibold">
                  
-                 PARA QUEM VAI PASSAR NO ENEM
+                 Para quem tem dificuldade de estudar.
 
                    
                 </div>

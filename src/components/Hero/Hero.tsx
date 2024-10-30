@@ -21,14 +21,12 @@ const Hero = ({ handleScrollServiceButton }: any) => {
                 Smart <span className="font-bold">Memory</span>
               </div>
             </div>
-            <p className="text-white text-5xl font-bold  text-left   max-md:text-4xl ">
-              Multiplique suas chances de{" "}
-              <span className="text-secondaryColor mb-">passar no ENEM</span> em{" "}
-              <span className="text-secondaryColor">4,5x</span> com este E-book.
+            <p className="text-white text-5xl font-bold  text-left  max-md:text-center  max-md:text-4xl mb-4">
+            Você estuda e parece que{" "}
+  <span className="text-secondaryColor">nada fica na cabeça?</span>
             </p>
-            <p className="text-textColorSecondary text-xl  max-md:text-lg">
-              Criado por universitários que foram aprovados utilizando esses
-              métodos.{" "}
+            <p className="text-textColorSecondary text-xl max-md:text-center max-md:text-lg mb-4">
+            Criei um e-book completo para quem está com dificuldade em estudar para o ENEM. {" "}
             </p>
             <div>
          
@@ -61,13 +59,12 @@ const Hero = ({ handleScrollServiceButton }: any) => {
               </div>
             </div>
             <p className="text-white text-5xl font-bold  text-left  max-md:text-center  max-md:text-4xl mb-10">
-              Multiplique suas chances de{" "}
-              <span className="text-secondaryColor mb-">passar no ENEM</span> em{" "}
-              <span className="text-secondaryColor">4,5x</span> com este E-book.
+              Está muito {" "}
+              <span className="text-secondaryColor mb-">difícil estudar </span> para o {" "}
+              <span className="text-secondaryColor">ENEM?</span> 
             </p>
             <p className="text-textColorSecondary text-xl max-md:text-center max-md:text-lg mb-10">
-              Criado por universitários que foram aprovados utilizando esses
-              métodos.{" "}
+              Criei um E-book completo para quem estuda e parece que nada fica na cabeça {" "}
             </p>
             <div className="text-xl ">
               <Button
