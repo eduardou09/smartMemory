@@ -26,7 +26,7 @@ const Hero = ({ handleScrollServiceButton }: any) => {
   <span className="text-secondaryColor">nada fica na cabeça?</span>
             </p>
             <p className="text-white text-xl max-md:text-center max-md:text-lg mb-1">
-            Criei um e-book completo para quem está com<span className="font-bold"> dificuldade em estudar para o ENEM.</span> {" "}
+            Criei um E-book completo para quem está com<span className="font-bold"> dificuldade em estudar para o ENEM.</span> {" "}
             </p>
             <div>
          
