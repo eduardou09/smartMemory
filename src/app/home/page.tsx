@@ -134,8 +134,8 @@ const Home = () => {
         </div>
         <div>
           <div className="text-center mt-5 font-semibold text-3xl">
-            TUDO QUE VOCÊ VAI{" "}
-            <span className="text-secondaryColor">APRENDER:</span>
+            O QUE VOCÊ VAI {" "}
+            <span className="text-secondaryColor">RECEBER</span>
           </div>
         </div>
         <div>
