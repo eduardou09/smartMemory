@@ -75,7 +75,7 @@ const Home = () => {
       <div className=" bg-white flex flex-col px-4 pb-10">
         <div className="text-3xl  mb-3 text-black font-bold max-md:text-center ">
           <div className="text-center mt-5">
-          TUDO QUE VOCÊ VAI<span className="text-[#00a857]">APRENDER: </span>
+          TUDO QUE VOCÊ VAI<span className="text-[#00a857]"> APRENDER: </span>
           </div>
           <div className="flex  text-lg font-normal mt-3 gap-2 ">
             <div className=" flex items-center justify-center">
