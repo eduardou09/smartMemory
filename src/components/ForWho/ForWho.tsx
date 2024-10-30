@@ -49,14 +49,14 @@ const ForWho = ({ ref, serviceRef }: any) => {
       <div>
         <div className="text-3xl  mb-3 text-black font-bold max-md:text-center mt-5">
        <div className="text-center">
-       TUDO QUE VOCÊ VAI <span className="text-[#00a857]">APRENDER:</span>
+       PRINCIPAIS <span className="text-[#00a857]">BENEFÍCIOS:</span>
         </div>  
           <div className="flex  text-lg font-normal mt-3 gap-2">
             <div className=" flex items-center justify-center">
               <FaCheck  className="text-[#00a857]"/>
             </div>
             <div className="m-0 text-start ">
-              O método Smart Memory, que permite você maximizar sua capacidade
+              O método Smart Memory permite você maximizar sua capacidade
               de memorização.
             </div>
           </div>
