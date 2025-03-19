@@ -8,7 +8,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "SmartMemory",
-  description: "SmartMemory: Melhore com técnicas comprovadas, dicas e exercícios práticos. Treine sua mente para aumentar o foco, retenção e produtividade, foco ENEM 2024.",
+  description: "SmartMemory: Melhore com técnicas comprovadas, dicas e exercícios práticos. Treine sua mente para aumentar o foco, retenção e produtividade, foco ENEM 2025.",
 };
 
 export default function RootLayout({

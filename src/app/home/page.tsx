@@ -148,7 +148,7 @@ const Home = () => {
               <div className="text-black flex flex-col gap-3 text-lg">
                 <li>Metodologia Smart Memory</li>
                 <li>Checklists para organização </li>
-                <li>Conteúdos Enem 2024</li>
+                <li>Conteúdos Enem 2025</li>
                 <li>Dicas para estudos</li>
                 <li>Dicas para estresse e ansiedade</li>
                 <li>Ferramentas para estudo</li>
